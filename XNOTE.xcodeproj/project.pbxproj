@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31624DAC2705B346002BC0FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF04DBFF23DFB6B80023B46E /* Assets.xcassets */; };
+		EF04DBF723DFB6B70023B46E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF04DBF623DFB6B70023B46E /* AppDelegate.swift */; };
+		EF04DBF923DFB6B70023B46E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF04DBF823DFB6B70023B46E /* SceneDelegate.swift */; };
+		EF04DC0B23DFBD580023B46E /* ListNotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF04DC0A23DFBD580023B46E /* ListNotesTableViewController.swift */; };
+		EF04DC0D23DFC0770023B46E /* ListNotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF04DC0C23DFC0770023B46E /* ListNotesTableViewCell.swift */; };
+		EF04DC0F23DFC3680023B46E /* DisplayNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF04DC0E23DFC3680023B46E /* DisplayNoteViewController.swift */; };
+		EF04DC1523DFC8F10023B46E /* Date+convertToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF04DC1423DFC8F10023B46E /* Date+convertToString.swift */; };
+		EF04DC1B23DFD89D0023B46E /* Alnote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF04DC1923DFD89D0023B46E /* Alnote.xcdatamodeld */; };
+		EF04DC1D23DFD9950023B46E /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF04DC1C23DFD9950023B46E /* CoreDataHelper.swift */; };
+		EF04DC1F23E018DC0023B46E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF04DC1E23E018DC0023B46E /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		31FCF536270222FE005B5BDE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EF04DBF323DFB6B70023B46E /* Alnote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Alnote.app; path = "/Users/ilyabolotov/Documents/XNote/build/Debug-iphoneos/Alnote.app"; sourceTree = "<absolute>"; };
+		EF04DBF623DFB6B70023B46E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF04DBF823DFB6B70023B46E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EF04DBFF23DFB6B80023B46E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF04DC0423DFB6B80023B46E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF04DC0A23DFBD580023B46E /* ListNotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNotesTableViewController.swift; sourceTree = "<group>"; };
+		EF04DC0C23DFC0770023B46E /* ListNotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNotesTableViewCell.swift; sourceTree = "<group>"; };
+		EF04DC0E23DFC3680023B46E /* DisplayNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayNoteViewController.swift; sourceTree = "<group>"; };
+		EF04DC1423DFC8F10023B46E /* Date+convertToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+convertToString.swift"; sourceTree = "<group>"; };
+		EF04DC1A23DFD89D0023B46E /* Alnote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Alnote.xcdatamodel; sourceTree = "<group>"; };
+		EF04DC1C23DFD9950023B46E /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		EF04DC1E23E018DC0023B46E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF04DBF023DFB6B70023B46E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31FCF532270222FE005B5BDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF04DBEA23DFB6B70023B46E = {
+			isa = PBXGroup;
+			children = (
+				EF04DBF523DFB6B70023B46E /* xnote */,
+				31FCF532270222FE005B5BDE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF04DBF523DFB6B70023B46E /* xnote */ = {
+			isa = PBXGroup;
+			children = (
+				EF04DC1623DFC9030023B46E /* Helpers */,
+				EF04DC1323DFC8C60023B46E /* Extensions */,
+				EF04DC1223DFC87F0023B46E /* Controllers */,
+				EF04DC1123DFC8780023B46E /* Views */,
+				EF04DC1023DFC8710023B46E /* Models */,
+				EF04DBF623DFB6B70023B46E /* AppDelegate.swift */,
+				EF04DBF823DFB6B70023B46E /* SceneDelegate.swift */,
+				EF04DBFF23DFB6B80023B46E /* Assets.xcassets */,
+				EF04DC0423DFB6B80023B46E /* Info.plist */,
+			);
+			path = xnote;
+			sourceTree = "<group>";
+		};
+		EF04DC1023DFC8710023B46E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EF04DC1923DFD89D0023B46E /* Alnote.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EF04DC1123DFC8780023B46E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF04DC0C23DFC0770023B46E /* ListNotesTableViewCell.swift */,
+				EF04DC1E23E018DC0023B46E /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF04DC1223DFC87F0023B46E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF04DC0A23DFBD580023B46E /* ListNotesTableViewController.swift */,
+				EF04DC0E23DFC3680023B46E /* DisplayNoteViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EF04DC1323DFC8C60023B46E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EF04DC1423DFC8F10023B46E /* Date+convertToString.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EF04DC1623DFC9030023B46E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EF04DC1C23DFD9950023B46E /* CoreDataHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF04DBF223DFB6B70023B46E /* Xnote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF04DC0723DFB6B80023B46E /* Build configuration list for PBXNativeTarget "Xnote" */;
+			buildPhases = (
+				EF04DBEF23DFB6B70023B46E /* Sources */,
+				EF04DBF023DFB6B70023B46E /* Frameworks */,
+				EF04DBF123DFB6B70023B46E /* Resources */,
+				31FCF536270222FE005B5BDE /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Xnote;
+			packageProductDependencies = (
+			);
+			productName = alnote;
+			productReference = EF04DBF323DFB6B70023B46E /* Alnote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF04DBEB23DFB6B70023B46E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1300;
+				ORGANIZATIONNAME = "Ilya Bolotov";
+				TargetAttributes = {
+					EF04DBF223DFB6B70023B46E = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = EF04DBEE23DFB6B70023B46E /* Build configuration list for PBXProject "XNOTE" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF04DBEA23DFB6B70023B46E;
+			productRefGroup = EF04DBEA23DFB6B70023B46E;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF04DBF223DFB6B70023B46E /* Xnote */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF04DBF123DFB6B70023B46E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31624DAC2705B346002BC0FF /* Assets.xcassets in Resources */,
+				EF04DC1F23E018DC0023B46E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF04DBEF23DFB6B70023B46E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF04DC0D23DFC0770023B46E /* ListNotesTableViewCell.swift in Sources */,
+				EF04DC1523DFC8F10023B46E /* Date+convertToString.swift in Sources */,
+				EF04DC0B23DFBD580023B46E /* ListNotesTableViewController.swift in Sources */,
+				EF04DC0F23DFC3680023B46E /* DisplayNoteViewController.swift in Sources */,
+				EF04DBF723DFB6B70023B46E /* AppDelegate.swift in Sources */,
+				EF04DC1D23DFD9950023B46E /* CoreDataHelper.swift in Sources */,
+				EF04DC1B23DFD89D0023B46E /* Alnote.xcdatamodeld in Sources */,
+				EF04DBF923DFB6B70023B46E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EF04DC0523DFB6B80023B46E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = XNote;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF04DC0623DFB6B80023B46E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = XNote;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF04DC0823DFB6B80023B46E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = US7P92C2A5;
+				INFOPLIST_FILE = "$(SRCROOT)/xnote/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xnote;
+				PRODUCT_NAME = Alnote;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EF04DC0923DFB6B80023B46E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = US7P92C2A5;
+				INFOPLIST_FILE = "$(SRCROOT)/xnote/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xnote;
+				PRODUCT_NAME = Alnote;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF04DBEE23DFB6B70023B46E /* Build configuration list for PBXProject "XNOTE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF04DC0523DFB6B80023B46E /* Debug */,
+				EF04DC0623DFB6B80023B46E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF04DC0723DFB6B80023B46E /* Build configuration list for PBXNativeTarget "Xnote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF04DC0823DFB6B80023B46E /* Debug */,
+				EF04DC0923DFB6B80023B46E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EF04DC1923DFD89D0023B46E /* Alnote.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EF04DC1A23DFD89D0023B46E /* Alnote.xcdatamodel */,
+			);
+			currentVersion = EF04DC1A23DFD89D0023B46E /* Alnote.xcdatamodel */;
+			path = Alnote.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EF04DBEB23DFB6B70023B46E /* Project object */;
+}
