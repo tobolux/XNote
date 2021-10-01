@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		314E302F27078B5C00310EDE /* XNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314E302E27078B5C00310EDE /* XNoteTests.swift */; };
 		31624DAC2705B346002BC0FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF04DBFF23DFB6B80023B46E /* Assets.xcassets */; };
 		3168B57F27063998007C46CD /* FormatingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3168B57E27063998007C46CD /* FormatingText.swift */; };
 		EF04DBF723DFB6B70023B46E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF04DBF623DFB6B70023B46E /* AppDelegate.swift */; };
@@ -19,6 +20,16 @@
 		EF04DC1D23DFD9950023B46E /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF04DC1C23DFD9950023B46E /* CoreDataHelper.swift */; };
 		EF04DC1F23E018DC0023B46E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF04DC1E23E018DC0023B46E /* Main.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		314E303027078B5C00310EDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF04DBEB23DFB6B70023B46E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF04DBF223DFB6B70023B46E;
+			remoteInfo = Xnote;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		31FCF536270222FE005B5BDE /* Embed Frameworks */ = {
@@ -34,6 +45,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		314E302C27078B5C00310EDE /* XNoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XNoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		314E302E27078B5C00310EDE /* XNoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XNoteTests.swift; sourceTree = "<group>"; };
 		31624DAD2705E5A5002BC0FF /* XNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3168B57E27063998007C46CD /* FormatingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatingText.swift; sourceTree = "<group>"; };
 		EF04DBF623DFB6B70023B46E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +63,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		314E302927078B5C00310EDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EF04DBF023DFB6B70023B46E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		314E302D27078B5C00310EDE /* XNoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				314E302E27078B5C00310EDE /* XNoteTests.swift */,
+			);
+			path = XNoteTests;
+			sourceTree = "<group>";
+		};
 		31FCF532270222FE005B5BDE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -71,8 +99,10 @@
 			isa = PBXGroup;
 			children = (
 				EF04DBF523DFB6B70023B46E /* xnote */,
+				314E302D27078B5C00310EDE /* XNoteTests */,
 				31FCF532270222FE005B5BDE /* Frameworks */,
 				31624DAD2705E5A5002BC0FF /* XNote.app */,
+				314E302C27078B5C00310EDE /* XNoteTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +168,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		314E302B27078B5C00310EDE /* XNoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 314E303227078B5C00310EDE /* Build configuration list for PBXNativeTarget "XNoteTests" */;
+			buildPhases = (
+				314E302827078B5C00310EDE /* Sources */,
+				314E302927078B5C00310EDE /* Frameworks */,
+				314E302A27078B5C00310EDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				314E303127078B5C00310EDE /* PBXTargetDependency */,
+			);
+			name = XNoteTests;
+			productName = XNoteTests;
+			productReference = 314E302C27078B5C00310EDE /* XNoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		EF04DBF223DFB6B70023B46E /* Xnote */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF04DC0723DFB6B80023B46E /* Build configuration list for PBXNativeTarget "Xnote" */;
@@ -164,10 +212,14 @@
 		EF04DBEB23DFB6B70023B46E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
+				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = "Ilya Bolotov";
 				TargetAttributes = {
+					314E302B27078B5C00310EDE = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = EF04DBF223DFB6B70023B46E;
+					};
 					EF04DBF223DFB6B70023B46E = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -187,11 +239,19 @@
 			projectRoot = "";
 			targets = (
 				EF04DBF223DFB6B70023B46E /* Xnote */,
+				314E302B27078B5C00310EDE /* XNoteTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		314E302A27078B5C00310EDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EF04DBF123DFB6B70023B46E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -204,6 +264,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		314E302827078B5C00310EDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				314E302F27078B5C00310EDE /* XNoteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EF04DBEF23DFB6B70023B46E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,7 +290,65 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		314E303127078B5C00310EDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF04DBF223DFB6B70023B46E /* Xnote */;
+			targetProxy = 314E303027078B5C00310EDE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		314E303327078B5C00310EDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = US7P92C2A5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = blx.XNoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XNote.app/XNote";
+			};
+			name = Debug;
+		};
+		314E303427078B5C00310EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = US7P92C2A5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = blx.XNoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XNote.app/XNote";
+			};
+			name = Release;
+		};
 		EF04DC0523DFB6B80023B46E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -384,6 +510,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		314E303227078B5C00310EDE /* Build configuration list for PBXNativeTarget "XNoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				314E303327078B5C00310EDE /* Debug */,
+				314E303427078B5C00310EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EF04DBEE23DFB6B70023B46E /* Build configuration list for PBXProject "XNOTE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -75,7 +75,7 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="113.83928571428571"/>
         </scene>
-        <!--Title-->
+        <!--Display Note View Controller-->
         <scene sceneID="baP-Ah-0f2">
             <objects>
                 <viewController id="pi3-6p-JBt" customClass="DisplayNoteViewController" customModule="XNote" customModuleProvider="target" sceneMemberID="viewController">
@@ -117,7 +117,7 @@
                             <constraint firstItem="y2a-jp-qZ6" firstAttribute="bottom" secondItem="Qrx-SC-dHm" secondAttribute="bottom" id="kY0-Oa-Qwn"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="tl2-tf-wTz">
+                    <navigationItem key="navigationItem" id="tl2-tf-wTz">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="gIQ-XT-k10">
                             <color key="tintColor" name="Color"/>
                             <connections>

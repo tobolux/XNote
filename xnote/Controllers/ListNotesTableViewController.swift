@@ -17,6 +17,7 @@ class ListNotesTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        CoreDataHelper.firstLaunch()
         notes = CoreDataHelper.getNotes()
     }
     
@@ -56,7 +57,7 @@ extension ListNotesTableViewController {
         return cell
     }
     
-    // Delete note
+    //Delete note - swipe left
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             let noteToDelete = notes[indexPath.row]
