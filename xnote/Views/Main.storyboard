@@ -13,13 +13,13 @@
         <!--XNote-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ListNotesTableViewController" customModule="Alnote" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ListNotesTableViewController" customModule="XNote" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="84" sectionHeaderHeight="28" sectionFooterHeight="28" id="RXE-fC-hQ3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="listNotesTableViewCell" id="MCd-6h-Mvt" customClass="ListNotesTableViewCell" customModule="Alnote" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="listNotesTableViewCell" id="MCd-6h-Mvt" customClass="ListNotesTableViewCell" customModule="XNote" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="84"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MCd-6h-Mvt" id="7IC-a4-eAD">
@@ -31,7 +31,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTQ-Pt-44S">
                                                     <rect key="frame" x="0.0" y="0.0" width="384" height="17"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" name="Color"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -78,7 +78,7 @@
         <!--Title-->
         <scene sceneID="baP-Ah-0f2">
             <objects>
-                <viewController id="pi3-6p-JBt" customClass="DisplayNoteViewController" customModule="Alnote" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pi3-6p-JBt" customClass="DisplayNoteViewController" customModule="XNote" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AsW-RD-fwT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,7 +100,6 @@
                                 <rect key="frame" x="15" y="142" width="384" height="720"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <mutableString key="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu enim quis dolor volutpat euismod. Donec mollis tempor purus vel posuere. Cras mollis, turpis vitae tincidunt rhoncus, libero turpis venenatis quam, sed tristique arcu risus at tellus. Fusce eu justo non arcu feugiat tempor ac ac nisl. Nullam vitae posuere lorem. Vestibulum ex risus, ornare eget luctus ac, consectetur sit amet lectus. Praesent eu nulla vitae neque convallis cursus ac at urna. Suspendisse potenti. Praesent lobortis, enim sed egestas hendrerit, nunc leo blandit nulla, at eleifend enim nulla non urna. Nunc euismod dui commodo eleifend tincidunt. </mutableString>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -125,20 +124,12 @@
                                 <segue destination="RW6-ze-QQU" kind="unwind" identifier="cancel" unwindAction="unwindWithSegue:" id="hbK-3t-7u8"/>
                             </connections>
                         </barButtonItem>
-                        <rightBarButtonItems>
-                            <barButtonItem systemItem="save" id="o9c-UR-qkb">
-                                <color key="tintColor" name="Color"/>
-                                <connections>
-                                    <segue destination="RW6-ze-QQU" kind="unwind" identifier="save" unwindAction="unwindWithSegue:" id="yAj-Km-kD7"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="Image" image="photo" catalog="system" id="I76-m5-Dtk">
-                                <color key="tintColor" name="Color"/>
-                                <connections>
-                                    <action selector="addImage:" destination="pi3-6p-JBt" id="SQL-cF-3nQ"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="o9c-UR-qkb">
+                            <color key="tintColor" name="Color"/>
+                            <connections>
+                                <segue destination="RW6-ze-QQU" kind="unwind" identifier="save" unwindAction="unwindWithSegue:" id="yAj-Km-kD7"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="contentTextView" destination="y2a-jp-qZ6" id="aI2-Sj-Ezh"/>
@@ -174,7 +165,6 @@
         <segue reference="dGx-zR-UPq"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="photo" catalog="system" width="128" height="93"/>
         <namedColor name="Color">
             <color red="0.0" green="0.55299997329711914" blue="0.80500000715255737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

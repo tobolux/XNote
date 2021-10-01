@@ -8,11 +8,7 @@
 import UIKit
 import CoreData
 
-// Creating Helper Methods
-// This class methods that we can use to add, update, retrieve, and delete notes NSManagedObject objects.
-
 struct CoreDataHelper {
-    // 1.  Reference
     static let context: NSManagedObjectContext = {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             fatalError()
@@ -22,14 +18,12 @@ struct CoreDataHelper {
         return context
     }()
     
-    // 2. Create note
     static func newNote() -> Note {
         let note = NSEntityDescription.insertNewObject(forEntityName: "Note", into: context) as! Note
         return note
     }
     
-    // 3. Read note
-    static func retrieveNotes() -> [Note] {
+    static func getNotes() -> [Note] {
         do {
             let fetchRequest = NSFetchRequest<Note>(entityName: "Note")
             let results = try context.fetch(fetchRequest)
@@ -41,8 +35,7 @@ struct CoreDataHelper {
             return []
         }
     }
-    
-    // 4. Save Note
+
     static func saveNote() {
         do {
             try context.save()
@@ -51,7 +44,6 @@ struct CoreDataHelper {
         }
     }
     
-    // 5. Delete note
     static func delete(note: Note) {
         context.delete(note)
         saveNote()

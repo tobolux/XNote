@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		31624DAC2705B346002BC0FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF04DBFF23DFB6B80023B46E /* Assets.xcassets */; };
+		3168B57F27063998007C46CD /* FormatingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3168B57E27063998007C46CD /* FormatingText.swift */; };
 		EF04DBF723DFB6B70023B46E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF04DBF623DFB6B70023B46E /* AppDelegate.swift */; };
 		EF04DBF923DFB6B70023B46E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF04DBF823DFB6B70023B46E /* SceneDelegate.swift */; };
 		EF04DC0B23DFBD580023B46E /* ListNotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF04DC0A23DFBD580023B46E /* ListNotesTableViewController.swift */; };
 		EF04DC0D23DFC0770023B46E /* ListNotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF04DC0C23DFC0770023B46E /* ListNotesTableViewCell.swift */; };
 		EF04DC0F23DFC3680023B46E /* DisplayNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF04DC0E23DFC3680023B46E /* DisplayNoteViewController.swift */; };
 		EF04DC1523DFC8F10023B46E /* Date+convertToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF04DC1423DFC8F10023B46E /* Date+convertToString.swift */; };
-		EF04DC1B23DFD89D0023B46E /* Alnote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF04DC1923DFD89D0023B46E /* Alnote.xcdatamodeld */; };
+		EF04DC1B23DFD89D0023B46E /* Xnote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF04DC1923DFD89D0023B46E /* Xnote.xcdatamodeld */; };
 		EF04DC1D23DFD9950023B46E /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF04DC1C23DFD9950023B46E /* CoreDataHelper.swift */; };
 		EF04DC1F23E018DC0023B46E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF04DC1E23E018DC0023B46E /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -33,7 +34,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		EF04DBF323DFB6B70023B46E /* Alnote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Alnote.app; path = "/Users/ilyabolotov/Documents/XNote/build/Debug-iphoneos/Alnote.app"; sourceTree = "<absolute>"; };
+		31624DAD2705E5A5002BC0FF /* XNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3168B57E27063998007C46CD /* FormatingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatingText.swift; sourceTree = "<group>"; };
 		EF04DBF623DFB6B70023B46E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF04DBF823DFB6B70023B46E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EF04DBFF23DFB6B80023B46E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 			children = (
 				EF04DBF523DFB6B70023B46E /* xnote */,
 				31FCF532270222FE005B5BDE /* Frameworks */,
+				31624DAD2705E5A5002BC0FF /* XNote.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,7 +95,7 @@
 		EF04DC1023DFC8710023B46E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EF04DC1923DFD89D0023B46E /* Alnote.xcdatamodeld */,
+				EF04DC1923DFD89D0023B46E /* Xnote.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -119,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				EF04DC1423DFC8F10023B46E /* Date+convertToString.swift */,
+				3168B57E27063998007C46CD /* FormatingText.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -151,7 +155,7 @@
 			packageProductDependencies = (
 			);
 			productName = alnote;
-			productReference = EF04DBF323DFB6B70023B46E /* Alnote.app */;
+			productReference = 31624DAD2705E5A5002BC0FF /* XNote.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -208,9 +212,10 @@
 				EF04DC1523DFC8F10023B46E /* Date+convertToString.swift in Sources */,
 				EF04DC0B23DFBD580023B46E /* ListNotesTableViewController.swift in Sources */,
 				EF04DC0F23DFC3680023B46E /* DisplayNoteViewController.swift in Sources */,
+				3168B57F27063998007C46CD /* FormatingText.swift in Sources */,
 				EF04DBF723DFB6B70023B46E /* AppDelegate.swift in Sources */,
 				EF04DC1D23DFD9950023B46E /* CoreDataHelper.swift in Sources */,
-				EF04DC1B23DFD89D0023B46E /* Alnote.xcdatamodeld in Sources */,
+				EF04DC1B23DFD89D0023B46E /* Xnote.xcdatamodeld in Sources */,
 				EF04DBF923DFB6B70023B46E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,7 +354,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xnote;
-				PRODUCT_NAME = Alnote;
+				PRODUCT_NAME = XNote;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -368,7 +373,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xnote;
-				PRODUCT_NAME = Alnote;
+				PRODUCT_NAME = XNote;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -398,13 +403,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		EF04DC1923DFD89D0023B46E /* Alnote.xcdatamodeld */ = {
+		EF04DC1923DFD89D0023B46E /* Xnote.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				EF04DC1A23DFD89D0023B46E /* Alnote.xcdatamodel */,
 			);
 			currentVersion = EF04DC1A23DFD89D0023B46E /* Alnote.xcdatamodel */;
-			path = Alnote.xcdatamodeld;
+			path = Xnote.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

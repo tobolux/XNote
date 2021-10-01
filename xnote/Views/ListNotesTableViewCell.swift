@@ -9,7 +9,7 @@ import UIKit
 
 class ListNotesTableViewCell: UITableViewCell {
     
-    // Creating cell IBOutlets
+    //IBOutlets cell
     @IBOutlet weak var noteTitleLabel: UILabel!
     @IBOutlet weak var noteModificationTimeLabel: UILabel!
     

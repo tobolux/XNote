@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EF04DBF223DFB6B70023B46E"
-               BuildableName = "Alnote.app"
+               BuildableName = "XNote.app"
                BlueprintName = "Xnote"
                ReferencedContainer = "container:XNOTE.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EF04DBF223DFB6B70023B46E"
-            BuildableName = "Alnote.app"
+            BuildableName = "XNote.app"
             BlueprintName = "Xnote"
             ReferencedContainer = "container:XNOTE.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EF04DBF223DFB6B70023B46E"
-            BuildableName = "Alnote.app"
+            BuildableName = "XNote.app"
             BlueprintName = "Xnote"
             ReferencedContainer = "container:XNOTE.xcodeproj">
          </BuildableReference>
