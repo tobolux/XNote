@@ -28,7 +28,7 @@ class DisplayNoteViewController: UIViewController, UIImagePickerControllerDelega
         super.viewWillAppear(animated)
         if let note = note {
             titleTextField.text = note.title
-            contentTextView.attributedText = note.content
+            contentTextView.attributedText = note.content as? NSAttributedString
         }
     }
     
