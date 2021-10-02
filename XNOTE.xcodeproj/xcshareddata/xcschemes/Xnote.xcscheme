@@ -38,6 +38,21 @@
                ReferencedContainer = "container:XNOTE.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "318573802708641200A1EE48"
+               BuildableName = "XNoteUITests.xctest"
+               BlueprintName = "XNoteUITests"
+               ReferencedContainer = "container:XNOTE.xcodeproj">
+            </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "XNoteUITests/testExample()">
+               </Test>
+            </SkippedTests>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

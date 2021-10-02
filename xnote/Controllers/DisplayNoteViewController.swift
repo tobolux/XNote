@@ -11,6 +11,7 @@ class DisplayNoteViewController: UIViewController, UIImagePickerControllerDelega
     
     var note: Note?
     var range = NSRange()
+    let imagePicker = UIImagePickerController()
     
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var contentTextView: UITextView!

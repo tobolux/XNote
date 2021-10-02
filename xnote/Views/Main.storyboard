@@ -31,6 +31,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTQ-Pt-44S">
                                                     <rect key="frame" x="0.0" y="0.0" width="384" height="17"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="cellTitle"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" name="Color"/>
                                                     <nil key="highlightedColor"/>
@@ -54,6 +55,9 @@
                                         <constraint firstItem="ZwH-Bg-BZi" firstAttribute="leading" secondItem="7IC-a4-eAD" secondAttribute="leading" constant="15" id="HcW-er-r6p"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration" identifier="listNotesTableViewCell">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <connections>
                                     <outlet property="noteModificationTimeLabel" destination="gsg-m3-Im3" id="S5h-Fm-Mbq"/>
                                     <outlet property="noteTitleLabel" destination="qTQ-Pt-44S" id="QBW-9P-HFA"/>
@@ -100,6 +104,7 @@
                                 <rect key="frame" x="15" y="142" width="384" height="720"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="textViewContent"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

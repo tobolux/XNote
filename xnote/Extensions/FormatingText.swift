@@ -53,7 +53,6 @@ extension DisplayNoteViewController {
     //MARK: Paste image
     @objc private func chooseImage(){
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
-            let imagePicker = UIImagePickerController()
             imagePicker.delegate = self
             imagePicker.allowsEditing = true
             imagePicker.sourceType = .photoLibrary
